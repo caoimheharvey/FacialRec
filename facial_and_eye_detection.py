@@ -1,7 +1,4 @@
 #Facial and eye detection using OPENCV API
-import subprocess
-bash = subprocess.check_output('export ', 'PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH')
-print bash
 import numpy as np
 import cv2
 from Tkinter import *
