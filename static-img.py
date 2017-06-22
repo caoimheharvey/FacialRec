@@ -6,7 +6,7 @@ import sys
 casc = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 #get image path from command line
-imagePath = sys.argv[1] 
+imagePath = sys.argv[1]
 
 image = cv2.imread(imagePath)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -14,7 +14,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 #code to detect the faces
 faces = casc.detectMultiScale (
 	gray,
-	scaleFactor = 1.1,
+	scaleFactor = 1.9,
 	minNeighbors = 5,
 	minSize = (30,30),
 	flags = cv2.cv.CV_HAAR_SCALE_IMAGE
